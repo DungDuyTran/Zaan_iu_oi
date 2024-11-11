@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: serif;
+}
+.btn {
+  display: inline-block;
+  min-width: 100px;
+  padding: 11px 16px;
+  line-height: 25px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 24px;
+  background: #000000;
+}
+a {
+  text-decoration: none;
+}
+.main-content {
+  width: 1170px;
+  min-width: calc(100% - 48px);
+
+  margin-left: auto;
+  margin-right: auto;
+}
+.header {
+  width: 1500px;
+  background: #f4f4f4;
+}
+.header.fixed {
+  position: static;
+  top: -28px;
+}
+.header .body {
+  display: flex;
+  align-items: center;
+  padding: 36px 0 8px;
+}
+.nav {
+  margin-left: auto;
+}
+.nav ul {
+  display: flex;
+}
+.nav a {
+  position: relative;
+  color: rgb(75, 74, 74);
+  text-align: center;
+  font-size: 16px;
+  background-color: #ffffff;
+  padding: 8px 21px;
+}
+.nav.li.avtive a,
+.nav a:hover {
+  color: rgb(171, 171, 171);
+  /* font-weight: 600; */
+  text-shadow: 1px 0 0 currentColor;
+}
+.nav.li.avtive a::after {
+  min-width: 118px;
+  padding: 0 16px;
+  position: absolute;
+  left: 21px;
+  bottom: 21px;
+  content: "";
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background: #ecb0b0;
+  display: block;
+}
+
+.header.btn-sign-up {
+  min-width: 144px;
+}
+.header.action {
+  margin-left: 49px;
+}
